@@ -10,9 +10,9 @@ namespace KDL{
         Chain reachy;
 
         // Convert angles to radians
-        double roll_rad = 10.0 * M_PI / 180.0; // -15.0 * M_PI / 180.0;
+        double roll_rad = -15.0 * M_PI / 180.0;
         double pitch_rad = 0.0;
-        double yaw_rad = 15.0 * M_PI / 180.0; // 10.0 * M_PI / 180.0;
+        double yaw_rad = 10.0 * M_PI / 180.0;
 
         // Create the rotation matrix from RPY angles
         Rotation rpy_rotation = Rotation::RPY(roll_rad, pitch_rad, yaw_rad);
@@ -58,9 +58,9 @@ namespace KDL{
         Chain reachy;
 
         // Convert angles to radians
-        double roll_rad = -10.0 * M_PI / 180.0; // 15.0 * M_PI / 180.0;
+        double roll_rad = 15.0 * M_PI / 180.0;
         double pitch_rad = 0.0;
-        double yaw_rad = -15.0 * M_PI / 180.0; // -10.0 * M_PI / 180.0;
+        double yaw_rad = -10.0 * M_PI / 180.0;
 
         // Create the rotation matrix from RPY angles
         Rotation rpy_rotation = Rotation::RPY(roll_rad, pitch_rad, yaw_rad);
