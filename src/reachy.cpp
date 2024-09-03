@@ -25,7 +25,7 @@ namespace KDL{
         reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, 0.0), Vector(1.0, 0.0, 0.0), Joint::RotAxis),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, 0.0))));
-        // r_arm_yaw
+        // r_elbow_yaw
         reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, -0.28), Vector(0.0, 0.0, 1.0), Joint::RotAxis),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, -0.28))
@@ -35,18 +35,18 @@ namespace KDL{
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, 0.0))));
         // r_forearm_yaw
-        reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, -0.28), Vector(0.0, 0.0, 1.0), Joint::RotAxis),
+        reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, -0.28), Vector(1.0, 0.0, 0.0), Joint::RotAxis),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, -0.28))));
-        // r_wrist_pitch
+        // r_wrist_roll
         reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, 0.0), Vector(0.0, 1.0, 0.0), Joint::RotAxis),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, 0.0))));
-        // r_wrist_roll
-        reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, 0.0), Vector(1.0, 0.0, 0.0), Joint::RotAxis),
+        // r_wrist_pitch
+        reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, 0.0), Vector(0.0, 0.0, 1.0), Joint::RotAxis),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, 0.0))));
-        // r_gripper
+        // r_wrist_yaw
         reachy.addSegment(Segment(Joint(Joint::None),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, -0.10))));
@@ -73,7 +73,7 @@ namespace KDL{
         reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, 0.0), Vector(1.0, 0.0, 0.0), Joint::RotAxis),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, 0.0))));
-        // l_arm_yaw
+        // l_elbow_yaw
         reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, -0.28), Vector(0.0, 0.0, 1.0), Joint::RotAxis),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, -0.28))
@@ -83,18 +83,18 @@ namespace KDL{
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, 0.0))));
         // l_forearm_yaw
-        reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, -0.28), Vector(0.0, 0.0, 1.0), Joint::RotAxis),
+        reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, -0.28), Vector(1.0, 0.0, 0.0), Joint::RotAxis),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, -0.28))));
-        // l_wrist_pitch
+        // l_wrist_roll
         reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, 0.0), Vector(0.0, 1.0, 0.0), Joint::RotAxis),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, 0.0))));
-        // l_wrist_roll
-        reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, 0.0), Vector(1.0, 0.0, 0.0), Joint::RotAxis),
+        // l_wrist_pitch
+        reachy.addSegment(Segment(Joint(Vector(0.0, 0.0, 0.0), Vector(0.0, 0.0, 1.0), Joint::RotAxis),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, 0.0))));
-        // l_gripper
+        // l_wrist_yaw
         reachy.addSegment(Segment(Joint(Joint::None),
                                    Frame(Rotation(1.0, 0.0, 0.0, 0.0, 1.0, 0.0 , 0.0, 0.0, 1.0), 
                                         Vector(0.0, 0.0, -0.10))));
